@@ -14,5 +14,5 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU")
 add_compile_options(-Wall -Wpedantic)
 endif()
 
-add_executable(${PROJECT_NAME} main.cpp moteur.cc traducteur.cc vue.cc)
+add_executable(${PROJECT_NAME} main.cpp vue.cc)
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)

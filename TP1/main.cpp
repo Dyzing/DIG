@@ -1,6 +1,8 @@
 #include <iostream>
 #include <QtWidgets>
 #include "vue.hh"
+#include "traducteur.hh"
+#include "moteur.hh"
 
 using namespace std;
 

@@ -1,9 +1,8 @@
 #include "moteur.hh"
 
-moteur::moteur(vue const & v1)
-    :_v1(v1)
+moteur::moteur(traducteur t1)
+    :_t1(t1)
 {
-
 }
 
 void moteur::oncliccalculer()
@@ -34,5 +33,5 @@ void moteur::oncliccalculer()
         result = f1 / f2;
         break;
     };
-    _v1.getResultat()->display(QString::fromStdString(std::to_string(result)));
+    _t1.getResultat()->display(QString::fromStdString(std::to_string(result)));
 }

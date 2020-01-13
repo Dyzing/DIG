@@ -1,6 +1,7 @@
 #include "traducteur.hh"
 
-traducteur::traducteur()
+traducteur::traducteur(vue v1)
+    :_v1(v1)
 {
 
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include <QtWidgets>
+#include <string>
 
 class vue : public QWidget
 {
@@ -15,6 +16,8 @@ public:
 
     QLCDNumber *getResultat() const;
 
+
+    void oncliccalculer();
 private:
     QSpinBox* spinbox1;
     QSpinBox* spinbox2;

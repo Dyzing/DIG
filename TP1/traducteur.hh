@@ -1,11 +1,11 @@
-#ifndef TRADUCTEUR_HH
-#define TRADUCTEUR_HH
-
+#pragma once
+#include "vue.hh"
 
 class traducteur
 {
 public:
-    traducteur();
+    traducteur(vue v1);
+private:
+    vue _v1;
 };
 
-#endif // TRADUCTEUR_HH

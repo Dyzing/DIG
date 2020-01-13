@@ -1,12 +1,12 @@
 #pragma once
-#include "vue.hh"
+#include "traducteur.hh"
 
 class moteur
 {
 public:
-    moteur(const vue &v1);
+    moteur(traducteur t1);
 private:
     void oncliccalculer();
-    vue _v1;
+    traducteur _t1;
 };
 
