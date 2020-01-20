@@ -1,10 +1,9 @@
 #include "traducteur.hh"
-
+#include "moteur.hh"
 
 
 traducteur::traducteur()
     :s1(_v1.getSpinbox1()->text().toStdString()), s2(_v1.getSpinbox2()->text().toStdString()), ope(_v1.getCombobox()->currentText().toStdString())
-
 {
     QObject::connect(_v1.getEgal(), &QPushButton::clicked, this, &_m1.oncliccalculer());
     QObject::connect(_v1.getCombobox(), &QComboBox::currentTextChanged, this, &_m1.oncliccalculer());

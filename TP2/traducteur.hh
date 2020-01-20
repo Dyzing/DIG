@@ -20,11 +20,13 @@ public:
 
     std::string getOpe() const;
 
+    vue getV1() const;
+
 private:
     std::string s1;
     std::string s2;
     std::string ope;
     vue _v1;
-    moteur _m1;
+//    moteur _m1;
 };
 

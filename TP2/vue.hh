@@ -4,6 +4,7 @@
 #include <iostream>
 
 
+
 class vue : public QWidget
 {
 public:
