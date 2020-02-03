@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.6.2, 2020-01-20T16:34:31. -->
+<!-- Written by QtCreator 4.6.2, 2020-02-03T16:24:31. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -166,6 +166,7 @@
     </valuelist>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguation.Title">TP1_exo2</value>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments"></value>
+    <value type="bool" key="CMakeProjectManager.CMakeRunConfiguration.UseTerminal">true</value>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory"></value>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/home/g/t/gtrem/build-TP1_exo2-Desktop-Debug</value>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>

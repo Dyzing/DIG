@@ -23,6 +23,8 @@ public:
 
     void onclickegal();
 
+//    void emettreSignal (){ emit  signalVue(spinbox1->text().toStdString(), spinbox2->text().toStdString(), combobox->currentText().toStdString());}
+
 signals:
     void signalVue(std::string s1, std::string s2, std::string ope);
 
@@ -33,7 +35,8 @@ private:
     QPushButton* egal;
     QLCDNumber* resultat;
 
-    moteur _m1;
-    moteur _m2;
+    traducteur _t1;
+//    moteur _m1;
+//    moteur _m2;
 };
 

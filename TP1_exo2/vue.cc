@@ -26,18 +26,29 @@ vue::vue()
 
     this->setLayout(lay);
 
-    QObject::connect(vue::getEgal(), &QPushButton::clicked, this, &vue::onclickegal);
+     QObject::connect(vue::getEgal(), &QPushButton::clicked, this, &vue::onclickegal);
 
-    QObject::connect(vue::getEgal(), &vue::signalVue, this, &_m1.calculer(spinbox1->text().toStdString(), spinbox2->text().toStdString(), combobox->currentText().toStdString()));
-    QObject::connect(vue::getCombobox(), &QComboBox::currentTextChanged, this, &_m1.calculer(spinbox1->text().toStdString(), spinbox2->text().toStdString(), combobox->currentText().toStdString()));
+
+
+      QObject::connect(this, &vue::signalVue, &_t1, &traducteur::calcul_slot);
+
+
+//    QObject::connect(vue::getEgal(), &vue::signalVue, this, &_m1.calculer(spinbox1->text().toStdString(), spinbox2->text().toStdString(), combobox->currentText().toStdString()));
+//    QObject::connect(vue::getEgal(), &vue::signalVue, this, &moteur::calculer);
+//    vue::emettreSignal();
+//    QObject::connect(vue::getCombobox(), &QComboBox::currentTextChanged, this, &_m1.calculer(spinbox1->text().toStdString(), spinbox2->text().toStdString(), combobox->currentText().toStdString()));
+
+
 
 
 }
+
 
 vue::vue(const vue &v1)
 {
     std::cout<< "Ceci est un constructeur par recopie de vue. " << std::endl;
 }
+
 
 QSpinBox *vue::getSpinbox1() const
 {

@@ -22,7 +22,7 @@ void moteur::calculer(std::string s1, std::string s2, std::string ope)
         f2 = std::stof(s2);
 
     int result;
-    switch (ope) {
+    switch (ope[0]) {
     case '+':
         result = f1 + f2;
         break;

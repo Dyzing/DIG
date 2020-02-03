@@ -5,7 +5,12 @@
 traducteur::traducteur()
 //    :s1(_v1.getSpinbox1()->text().toStdString()), s2(_v1.getSpinbox2()->text().toStdString()), ope(_v1.getCombobox()->currentText().toStdString())
 {
+    QObject::connect(this, &traducteur::signalTraducteur, &_m1, &moteur::calculer);
+}
 
+traducteur::traducteur(const traducteur &t1)
+{
+    std::cout << "recopie traducteur.";
 }
 
 
@@ -19,19 +24,11 @@ traducteur::traducteur()
 //    _v1.getResultat()->display("Err");
 //}
 
-std::string traducteur::getS1() const
-{
-    return s1;
-}
 
-std::string traducteur::getS2() const
-{
-    return s2;
-}
 
-std::string traducteur::getOpe() const
+void traducteur::calcul_slot(std::string s1, std::string s2, std::string o)
 {
-    return ope;
+    emit signalTraducteur(s1, s2, o);
 }
 
 
